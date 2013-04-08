@@ -1,0 +1,24 @@
+{
+  "name": "streams-dojo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Geek Collision streams dojo",
+  "main": "index.js",
+  "dependencies": {
+    "concat-stream": "~0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha */test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epeli/streams-dojo.git"
+  },
+  "keywords": [
+    "dojo"
+  ],
+  "author": "Esa-Matti Suuronen",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
