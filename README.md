@@ -14,13 +14,13 @@ The live coded solutions are on the master branch:
 
 https://github.com/epeli/streams-dojo/tree/master
 
-My reference solutions are on the original branch:
+My reference solutions are on the reference branch:
 
-https://github.com/epeli/streams-dojo/tree/original
+https://github.com/epeli/streams-dojo/tree/reference
 
 Blank exercises can be found from the blank branch:
 
-https://github.com/epeli/streams-dojo/tree/original
+https://github.com/epeli/streams-dojo/tree/blank
 
 The dojo timer is here:
 
