@@ -2,6 +2,8 @@
 
 http://www.geekcollision.org/2013/03/dojo-nodejs-streams-at-hemingways-94.html
 
+Example implementations are on `original` branch https://github.com/epeli/streams-dojo/tree/original
+
 Get node.js 0.10 http://nodejs.org/
 
 Global installation of Mocha
