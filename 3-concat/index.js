@@ -9,22 +9,4 @@
  * string: cb(null, string);
  **/
 module.exports = function(readable, cb) {
-
-    var buffer = "";
-    function read() {
-        var s = readable.read();
-        if (s === null) {
-            return;
-        }
-        else {
-            buffer += s.toString();
-        }
-        read();
-    }
-    readable.on("readable", read);
-    readable.on("end", function() {
-        cb(null, buffer);
-    });
-
-    read();
 };

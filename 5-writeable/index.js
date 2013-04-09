@@ -12,26 +12,11 @@ var util = require("util");
  **/
 function JSONParseStream(){
     stream.Writable.call(this);
-    this.remaining = "";
 }
 
 util.inherits(JSONParseStream, stream.Writable);
 
 JSONParseStream.prototype._write = function(chunk, encoding, cb) {
-    var self = this;
-    var current =  this.remaining + chunk.toString();
-    var lines = current.split("\n");
-    this.remaining = lines.pop();
-
-    lines.forEach(function(line) {
-        try {
-            self.emit("json", JSON.parse(line));
-        } catch (err) {
-            // was unfinished part
-        }
-    });
-
-    cb();
 };
 
 module.exports = function() {

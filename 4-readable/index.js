@@ -18,14 +18,12 @@ util.inherits(JSONStringifyStream, stream.Readable);
  * @param {Object} any json serializable object
  **/
 JSONStringifyStream.prototype.writeJSON = function(msg) {
-    this.push(JSON.stringify(msg) + "\n");
 };
 
 /**
  * Called when done writing json messages
  **/
 JSONStringifyStream.prototype.done = function() {
-    this.push(null);
 };
 
 JSONStringifyStream.prototype._read = function(size) {
