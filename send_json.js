@@ -1,5 +1,5 @@
 
-var jsonstream= require("./index");
+var jsonstream= require("./4-readable/index");
 
 var stream = jsonstream();
 stream.pipe(process.stdout);

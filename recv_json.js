@@ -1,5 +1,5 @@
 
-var readjson = require("../5-writeable/index");
+var readjson = require("./5-writeable/index");
 
 var stream = readjson();
 
