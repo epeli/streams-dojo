@@ -1,4 +1,3 @@
-
 var stream = require("stream");
 var util = require("util");
 
@@ -13,6 +12,9 @@ function JSONStringifyStream(){
 util.inherits(JSONStringifyStream, stream.Readable);
 
 /**
+ * Write json objects as new line (\n) separated strings
+ * to a stream
+ * 
  * @param {Object} any json serializable object
  **/
 JSONStringifyStream.prototype.writeJSON = function(msg) {
