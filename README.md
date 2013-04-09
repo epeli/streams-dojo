@@ -1,6 +1,6 @@
 # Geek Collision - node.js streams2 dojo
 
-http://www.geekcollision.org/2013/03/dojo-nodejs-streams-at-hemingways-94.html
+Afterthoughts by @bebraw http://www.geekcollision.org/2013/04/nodejs-streams-dojo-afterthoughts.html
 
 Thanks to all participants!
 
