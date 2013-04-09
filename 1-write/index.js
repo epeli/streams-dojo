@@ -7,4 +7,6 @@
  * @param {stream.Writable}
  **/
 module.exports = function(writeable) {
+  writeable.write('hello world')
+  writeable.end()
 };

@@ -11,6 +11,8 @@ function Upcase(){
 util.inherits(Upcase, stream.Transform);
 
 Upcase.prototype._transform = function(chunk, encoding, cb) {
+	this.push(chunk.toString().toUpperCase());
+	cb();
 };
 
 module.exports = function() {

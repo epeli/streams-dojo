@@ -9,4 +9,9 @@ var fs = require("fs");
  * @return {stream.Readable}
  **/
 module.exports = function(file) {
+	var striimi = new stream.PassThrough();
+	setTimeout(function() {
+      fs.createReadStream(file).pipe(striimi);
+	}, 100);
+	return striimi;
 };

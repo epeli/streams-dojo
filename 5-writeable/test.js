@@ -29,6 +29,19 @@ describe("json write stream", function() {
         s.end('": 1 }\n');
 
     });
+
+    it("parses json from broken chunks with multiple new lines", function(done){
+        var s = jsonWriteStream();
+
+        s.on("json", function(json) {
+            assert.deepEqual(json, { foo: "dsf\ndds" });
+            done();
+        });
+
+        s.write('{ "foo": "dsf\ndds"}\n');
+        s.end();
+
+    });
 });
 
 

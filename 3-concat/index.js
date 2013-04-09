@@ -9,4 +9,13 @@
  * string: cb(null, string);
  **/
 module.exports = function(readable, cb) {
+	var data = '';
+	readable.on('readable', function() {
+		var jutut = readable.read();
+		
+		data += jutut;
+		//cb(null, jutut);
+	}).on('end', function() {
+		cb(null, data);
+	});
 };

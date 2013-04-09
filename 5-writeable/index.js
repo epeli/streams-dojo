@@ -12,11 +12,22 @@ var util = require("util");
  **/
 function JSONParseStream(){
     stream.Writable.call(this);
+    this.whole = '';
 }
 
 util.inherits(JSONParseStream, stream.Writable);
 
-JSONParseStream.prototype._write = function(chunk, encoding, cb) {
+JSONParseStream.prototype._write =
+	function(chunk, encoding, cb)
+{
+	this.whole += chunk.toString();
+		if (this.whole.indexOf('\n') > -1) {
+			var obj = JSON.parse(this.whole);
+		//cb(null, obj);
+		this.emit('json',obj);
+	}
+	cb(null);
+
 };
 
 module.exports = function() {
