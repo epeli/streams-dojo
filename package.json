@@ -5,7 +5,7 @@
   "description": "Geek Collision streams dojo",
   "main": "index.js",
   "dependencies": {
-    "concat-stream": "~0.1.1",
+    "concat-stream": "~1.6.2",
     "nyanstream": ""
   },
   "devDependencies": {},
