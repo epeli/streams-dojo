@@ -1,5 +1,7 @@
 # Geek Collision - node.js streams2 dojo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/epeli/streams-dojo.svg)](https://greenkeeper.io/)
+
 Afterthoughts by @bebraw http://www.geekcollision.org/2013/04/nodejs-streams-dojo-afterthoughts.html
 
 Thanks to all participants!
